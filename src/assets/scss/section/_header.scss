@@ -21,7 +21,7 @@
             font-size: 20px;
             line-height: 1; //여백 처리
             font-weight: 900;
-            text-transform: uppercase;
+            text-transform: uppercase; //텍스트를 모두 대문자로 변환
         }
     }
 }
@@ -80,7 +80,7 @@
                 border-radius: 40px;
                 margin: 3px 1px;
                 transition: all 0.3s;
-                
+
                 &:hover {
                     background-color: var(--black200);
                     color: var(--white);
