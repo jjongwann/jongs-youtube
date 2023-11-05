@@ -8,7 +8,7 @@ const Sns = () => {
                 <ul>
                         {snsLink.map((sns, key)=>(
                             <li key={key}>
-                                <Link to={sns.url} aria-label={sns.title}>
+                                <Link to={sns.url} aria-label={sns.title} target="_blank" rel="noopener noreferrer">
                                     {sns.icon}
                                 </Link>
                             </li>
