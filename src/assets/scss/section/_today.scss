@@ -1,17 +1,18 @@
-.today__inner{
+.today__inner {
     display: flex;
     background-color: var(--black100);
     margin-bottom: 3.125rem;
 }
 
-.today__thumb{
+.today__thumb {
     width: 40%;
 }
 
-.today__text{
+.today__text {
     width: 60%;
     padding: 2rem;
-    .today{
+
+    .today {
         background-color: #f00;
         padding: 2px 50px;
         border-radius: 20px;
@@ -19,40 +20,42 @@
         margin-bottom: 10px;
         display: inline-block;
     }
-    .title{
+    .title {
         font-size: 2rem;
         margin-bottom: 1rem;
         @include line-one;
     }
-    .desc{
+    .desc {
         margin-bottom: 1rem;
         color: var(--white200);
         @include line(4)
     }
-    .info{}
-
-        .author{
+        
+    .info {
+        .author {
             font-size: 1rem;
             margin-right: 10px;
             font-weight: 900;
             text-decoration: underline;
-            text-underline-position: under; //텍스트 밑줄의 위치를 정의
-            text-transform: uppercase; //텍스트를 대문자로 변경 
+            text-underline-position: under;
+            text-transform: uppercase;
         }
-        .date{
-            font-size: 0.8rem;
+        .date {
+            font-style: 0.8rem;
             color: var(--white200);
         }
-}
+    }
+} 
 
 @media (max-width: 1700px){
-    .today__inner{
-        .today__thumb{
+    .today__inner {
+        .today__thumb {
             width: 500px;
         }
-        .today__text{
+        .today__text {
             width: calc(100% - 500px);
-            .desc{
+
+            .desc {
                 @include line(2);
             }
         }

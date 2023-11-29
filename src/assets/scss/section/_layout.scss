@@ -4,7 +4,7 @@
     top: 0;
     width: 260px;
     height: 100%;
-    overflow-y: auto; //요소의 세로 영역을 벗어나면 스크롤바가 자동 생성(heigth가 100%일때)
+    overflow-y: auto;
     z-index: 10000;
     border-right: 1px solid var(--black100);
 }
@@ -17,28 +17,28 @@
 #footer {
     text-align: center;
     background-color: var(--black100);
-    border-top: 1px solid var(--black100);
+    border-top: 1px solid (var--black100);
     padding: 20px;
     margin-left: 260px;
     width: calc(100% - 260px);
-    font-size: 0.8rem;
     color: var(--black400);
-   
+    font-size: 0.8rem;
 }
 
 @media (max-width: 800px){
-    #header{
+    #header {
         left: -260px;
-        h1{
+
+        h1 {
             position: fixed;
             left: 0;
             top: 0;
         }
     }
-    #main{
+    #main {
         padding-left: 0;
     }
-    #footer{
+    #footer {
         width: 100%;
         margin-left: 0;
     }
