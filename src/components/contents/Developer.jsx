@@ -63,7 +63,7 @@ const Developer = ({ videos, title, id}) => {
                 >
                     {videos.map((developer, key) => (
                         <SwiperSlide key={key}>
-                            <div className='developer' >
+                            <div className='developer'>
                                 <div className="developer__img play__icon">
                                     <Link to={`/channel/${developer.channelId}`}>
                                         <img src={developer.img} alt={developer.name} />
