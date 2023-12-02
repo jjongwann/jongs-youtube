@@ -17,7 +17,7 @@ const Search = () => {
     }, [searchId]);
 
     const fetchVideos = (query, pageToken = '') => {
-        fetchFromAPI(`search?part=snippet&q=${query}&pageToken=${pageToken}`)
+        fetchFromAPI(`search?part=snippet&type=video&q=${query}&pageToken=${pageToken}`)
        .then((data) => {
         setNextPageToken(data.nextPageToken);
         setVideos((preVideos) => [...preVideos, ...data.items]); //CONCAT과 같은 역할(이전 데이터 + 다음 데이터)
