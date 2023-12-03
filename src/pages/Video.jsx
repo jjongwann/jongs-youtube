@@ -36,7 +36,7 @@ const Video = () => {
                                 url={`https://www.youtube.com/watch?v=${videoId}`} 
                                 width='100%' 
                                 height='100%' 
-                                style={{ position: 'absolute', top: 0, left: 0 ,controls:true, autoPlay:false}}
+                                style={{ position: 'absolute', top: 0, left: 0}}
                             />
                         </div>
                         <div className='video__info'>
