@@ -11,12 +11,13 @@ const Main = (props) => {
         <HelmetProvider>
             <ScrollTo />
             <Helmet 
-                titleTemplate="%s | Webs Youtube" 
-                defaultTitle="Webs Youtube" 
+                titleTemplate="%s | Jongs Youtube" 
+                defaultTitle="Jongs Youtube" 
                 defer={false}
             >
                 {props.title && <title>{props.title}</title>}
                 <meta name="description" content={props.description} />
+                <meta property='og:img' content='src/assets/img/youtube/jongsYotube'/>
             </Helmet>
 
             <Header />

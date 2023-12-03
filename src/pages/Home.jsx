@@ -15,8 +15,8 @@ import { todayText } from '../data/today'
 const Home = () => {
     return (
         <Main 
-            title="웹스토리보이 유튜브" 
-            description="웹스토리보이 유튜브에 오신것을 환영합니다."
+            title="JONG'S YOUTUBE" 
+            description="JONG'S YOUTUBE에 오신것을 환영합니다."
         >
             <Today videos={todayText} id='today' />
             <Developer videos={developerText} title='😪 추천 개발자를 소개합니다.' id='developer' />
