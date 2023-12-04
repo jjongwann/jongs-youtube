@@ -29,10 +29,8 @@ const Video = () => {
             <section id='videoViewPage'>
                 {videoDetail && (
                     <div className='video__view'>
-                        <div className='video__play' >
+                        <div className='video__play'controls={true} playing={false} >
                             <ReactPlayer 
-                                controls={true} 
-                                playing={false}
                                 url={`https://www.youtube.com/watch?v=${videoId}`} 
                                 width='100%' 
                                 height='100%' 

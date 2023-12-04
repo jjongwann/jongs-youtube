@@ -17,7 +17,7 @@ const Main = (props) => {
             >
                 {props.title && <title>{props.title}</title>}
                 <meta name="description" content={props.description} />
-                <meta property='og:img' content="C:\Users\도서관\Desktop\jongs-youtube\src\assets\img\youtube\jongsYoutube.png"/>
+                <meta property='og:img' content="https://jongs-youtube.netlify.app/../../aasets/img/jongsYoutube.png"/>
             </Helmet>
 
             <Header />
