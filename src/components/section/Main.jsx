@@ -17,7 +17,7 @@ const Main = (props) => {
             >
                 {props.title && <title>{props.title}</title>}
                 <meta name="description" content={props.description} />
-                <meta property='og:img' content="/aasets/img/jongsYoutube.png"/>
+                <meta property='og:img' content="../../assets/img/jongsYoutube.png"/>
             </Helmet>
 
             <Header />
